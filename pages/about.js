@@ -1,18 +1,15 @@
-import Head from "next/head";
 import Link from "next/link";
 import React from "react";
-import styles from "../styles/Home.module.css";
+import Layout from "../components/Layout/Layout";
+
 const about = () => {
   return (
-    <>
-      <Head>
-        <title>about page</title>
-      </Head>
-      <div className={styles.main}>
+    <Layout title="DJ Events | About Page">
+      <div>
         <h1>hello form about</h1>
         <Link href="/">Home</Link>
       </div>
-    </>
+    </Layout>
   );
 };
 

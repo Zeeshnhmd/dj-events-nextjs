@@ -1,9 +1,10 @@
 import React from "react";
+import Layout from "../../components/Layout/Layout";
 
 export default function AddEvent() {
   return (
-    <div>
+    <Layout>
       <h1>AddEvent</h1>
-    </div>
+    </Layout>
   );
 }
