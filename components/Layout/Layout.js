@@ -15,15 +15,13 @@ export default function Layout({ title, keywords, description, children }) {
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Head>
-      <div className={styles.layout}>
-        <Header />
-        {router.pathname === "/" && <ShowCase />}
 
-        <div className={styles.container}>{children}</div>
-        <div className={styles.footer}>
-          <Footer />
-        </div>
-      </div>
+      <Header />
+      {router.pathname === "/" && <ShowCase />}
+
+      <div className={styles.container}>{children}</div>
+
+      <Footer />
     </div>
   );
 }
