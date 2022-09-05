@@ -4,7 +4,7 @@ import Layout from "../../components/Layout/Layout";
 
 export default function EventPage() {
   const router = useRouter();
-  console.log(router);
+
   return (
     <Layout>
       <h1>EventPage dynamic routes</h1>
